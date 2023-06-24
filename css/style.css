@@ -1,0 +1,352 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.section1 {
+    background-image: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.5),
+            rgba(2, 2, 5, 0.5)), url("../img/bg1.jpg");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.nav {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+}
+
+.nav-logo {
+    font-size: 2rem !important;
+    color: aliceblue;
+    font-weight: bold !important;
+}
+
+.nav-logo:hover {
+    transform: scale(1.0);
+    transition: ease-in 1s;
+    color: brown;
+}
+
+.nav-ul {
+    display: flex !important;
+    list-style-type: none;
+    margin: 9px !important;
+}
+
+.nav-ul li {
+    margin: 9px !important;
+}
+
+.nav-ul li a {
+    color: brown;
+    text-decoration: none;
+    font-weight: bold !important;
+    font-size: x-large;
+}
+
+.nav-ul li a:hover {
+    color: rgb(255, 255, 255);
+    font-size: x-large;
+    border: 1px;
+}
+
+.nav-button {
+    margin: 1rem;
+}
+
+.nav-button button {
+    margin-left: 1rem;
+    padding: 0.2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: 1px solid rgb(255, 255, 255);
+    outline: none !important;
+    border-radius: 4px !important;
+    font-size: larger !important;
+    cursor: pointer;
+    color: white !important;
+    background: none;
+}
+
+.nav-button button:hover {
+    color: rgb(226, 48, 48) !important;
+    background: white;
+    transform: scale(1.0);
+    transition: ease-out 1s;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5rem;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.container-header {
+    font-size: 5rem;
+    color: white !important;
+}
+
+.container-content {
+    font-size: 2rem;
+    color: rgb(177, 43, 43);
+}
+
+.cont-block {
+    display: flex;
+    width: 70%;
+    margin-top: 9rem;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: space-around;
+
+}
+
+.flex-1 {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(185, 51, 51);
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 9rem;
+}
+
+.flex-1:hover {
+    background-color: rgb(185, 51, 51);
+    transform: scale(1.0);
+    transition: ease-in-out 1s;
+    box-shadow: inset;
+}
+
+.cont2 {
+    font-size: larger;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-top: 4rem;
+    border: 1px solid white;
+    padding: 1rem;
+    border-radius: 0.51rem;
+    background-color: rgb(185, 51, 51);
+}
+
+.cont2:hover {
+    color: rgb(185, 51, 51);
+    background-color: white;
+}
+
+.about-us {
+    width: 100%;
+    padding: 90px 0;
+    background: #ddd;
+}
+
+.pic {
+    height: auto;
+    width: 40rem;
+    margin-right: 3rem;
+    border-radius: 2rem;
+}
+
+.about {
+    width: 1130px;
+    max-width: 85%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.text {
+    width: 540px;
+}
+
+.text h2 {
+    font-size: 90px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.text h5 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+span {
+    color: #4070f4;
+}
+
+.text p {
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+
+.data {
+    margin-top: 30px;
+}
+
+.hire {
+    font-size: 18px;
+    background: #4070f4;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    padding: 8px 25px;
+    border-radius: 6px;
+    transition: 0.5s;
+}
+
+.hire:hover {
+    background: #000;
+    border: 1px solid #4070f4;
+}
+
+.product {
+    display: flex;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8rem;
+}
+
+.card {
+    position: relative;
+    width: 320px;
+    height: 480px;
+    background: #191919;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: #ffce00;
+    transform: skewY(345deg);
+    transition: 0.5s;
+}
+
+.card:hover::before {
+    top: -70%;
+    transform: skewY(390deg);
+}
+
+.card::after {
+    content: "CORSAIR";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 6em;
+    color: rgba(0, 0, 0, 0.1);
+}
+
+.card .imgBox {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+}
+
+/*
+  .card .imgBox img {
+      max-width: 100%;
+      
+      transition: .5s;
+  }
+  
+  .card:hover .imgBox img {
+      max-width: 50%;
+        
+  }
+  */
+.card .contentBox {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.card .contentBox h3 {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card .contentBox .price {
+    font-size: 24px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.card .contentBox .buy {
+    position: relative;
+    top: 100px;
+    opacity: 0;
+    padding: 10px 30px;
+    margin-top: 15px;
+    color: #000000;
+    text-decoration: none;
+    background: #ffce00;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+.card:hover .contentBox .buy {
+    top: 0;
+    opacity: 1;
+}
+
+.mouse {
+    height: 300px;
+    width: auto;
+}
+
+.content {
+    background-color: #7884a7;
+}
+
+.conten {
+    margin-top: 9rem;
+    font-size: 5rem;
+    text-align: center;
+    width: 50%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    padding: 19rem;
+    color: white;
+}
+.footer {
+    background-color: #405691;
+    padding: 6rem;
+    text-align: center;
+    color: white;
+}
